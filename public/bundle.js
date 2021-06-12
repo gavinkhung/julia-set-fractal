@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{console.log("hello"),console.log("hello");const e=document.getElementById("plane"),l=e.getContext("2d");e.width=window.outerWidth,e.height=window.innerHeight,l.fillStyle="green",l.fillRect(10,10,150,150);for(let t=0;t<e.width;t++)for(let o=0;o<e.height;o++)l.fillStyle="hsl("+360*Math.random()+", 50%, 50%)",l.fillRect(t,o,1,1)})()})();
