@@ -6,16 +6,23 @@
   "scripts": {
     "serve": "webpack serve",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "assemblyscript": "^0.19.2",
     "ts-loader": "^9.2.3",
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.2"
   }
 }
