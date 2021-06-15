@@ -1,5 +1,5 @@
 # Julia-Set-Fratal
-A Julia Set renderer that is made with WebAssembly, Typescript, and HTML Canvas
+A Julia Set renderer, built with WebAssembly, Typescript, and HTML Canvas
 
 ## Serving the website locally
 ```bash
