@@ -33,6 +33,7 @@ fetch('optimized.wasm')
     canvas.height = height;
 
     const draw = (ca: number, cb: number) => {
+      context.clearRect(0, 0, canvas.width, canvas.height);
       for (let x = 0; x < canvas.width; x++) {
         for (let y = 0; y < canvas.height; y++) {
           // a is the real part and b is the imaginary part
