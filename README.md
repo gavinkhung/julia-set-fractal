@@ -23,3 +23,9 @@ npm run build
 ```bash
 npm run asbuild
 ```
+
+## Using JIT Mode on Tailwind CSS
+
+```bash
+npx tailwindcss -o tailwind.css --jit --purge "./**/*.html" --watch
+```
