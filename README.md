@@ -2,6 +2,10 @@
 
 A Julia Set renderer, built with WebAssembly, Typescript, and HTML Canvas
 
+## Demo
+
+[Available Here](https://gavinkhung.github.io/julia-set-fratal/public/)
+
 ## Program Output
 
 ![GIF Output](./public/set.gif 'Julia Set with different constants')
