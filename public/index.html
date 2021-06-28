@@ -21,29 +21,49 @@
           space-y-2
         "
       >
-        <h1 class="pb-4 text-4xl lg:text-5xl font-bold leading-tight">
+        <h1 class="pb-2 text-4xl lg:text-5xl font-bold leading-tight">
           Julia Set
         </h1>
+        <h2
+          class="
+            pb-4
+            text-xl
+            lg:text-3xl
+            text-gray-600
+            font-medium
+            leading-tight
+          "
+        >
+          Rendered in real-time
+        </h2>
         <h2 class="py-2 text-2xl lg:text-3xl font-medium leading-tight">
           About
         </h2>
         <p class="text-lg lg:text-xl font-normal leading-tight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore
-          omnis, error minima at totam repudiandae! Ipsa doloribus autem labore
-          suscipit exercitationem aliquam repudiandae a iste eos adipisci
-          repellat officiis ipsum officia earum, unde similique numquam beatae
-          possimus. Expedita odio tempora cumque ex facilis, nobis tempore
-          numquam quis dolorem ipsum, sint possimus architecto ipsam voluptatem
+          Julia Sets show the set of z in the equation <var>f(z)</var> =
+          <var>z</var><sup>2</sup> + <var>c</var> that do not diverge to
+          infinity with a given complex parameter, c. In the render, the value
+          of c is alternating between -1 and 1, showing us to see different
+          Julia Sets.
         </p>
-        <p class="text-lg lg:text-xl font-normal leading-tight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          vitae?
-        </p>
+        <h2 class="py-2 text-2xl lg:text-3xl font-medium leading-tight">
+          Complex Parameter
+        </h2>
+        <div class="">
+          <p
+            id="complex-real"
+            class="text-lg lg:text-xl font-normal leading-tight"
+          ></p>
+          <p
+            id="complex-imag"
+            class="text-lg lg:text-xl font-normal leading-tight"
+          ></p>
+        </div>
         <h2 class="py-2 text-2xl lg:text-3xl font-medium leading-tight">
           Technology Used
         </h2>
         <p class="text-lg lg:text-xl font-normal leading-tight">
-          Typescript, WebAssembly (AssemblyScript)
+          Typescript, WebAssembly (AssemblyScript), HTML Canvas
         </p>
       </div>
       <div class="flex flex-1 items-center justify-center set">

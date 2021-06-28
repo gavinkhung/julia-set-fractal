@@ -28,6 +28,12 @@ fetch('optimized.wasm')
 
     const canvas = document.getElementById('plane') as HTMLCanvasElement;
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;
+    const complexReal = document.getElementById(
+      'complex-real'
+    ) as HTMLParagraphElement;
+    const complexImag = document.getElementById(
+      'complex-imag'
+    ) as HTMLParagraphElement;
 
     canvas.width = width;
     canvas.height = height;
@@ -76,6 +82,8 @@ fetch('optimized.wasm')
       const ca = Math.sin(angle * Math.PI);
       const cb = Math.cos(angle);
       draw(ca, cb);
+      complexReal.textContent = 'Real: ' + ca.toFixed(4).toString();
+      complexImag.textContent = 'Imaginary: ' + cb.toFixed(4).toString();
 
       angle += 0.05;
     }, 50);
